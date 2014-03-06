@@ -16,6 +16,6 @@ Browse to eg. http://localhost:6725/train/Artarmon/TownHall
 
 ## Deploy on Heroku
 
-heroku create --stack=cedar --buildpack https://github.com/begriffs/heroku-buildpack-ghc.git
+    heroku create --stack=cedar --buildpack https://github.com/begriffs/heroku-buildpack-ghc.git
 git push heroku master
 

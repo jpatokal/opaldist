@@ -23,6 +23,7 @@ edgeList = let
         ++ hornsbyWynyardEdgeList
         ++ eppingWynyardEdgeList
         ++ cabraCentralEdgeList
+        ++ nowraCentralEdgeList
         ++ clydeCarlingfordEdgeList
         ++ lidcombeLithgowEdgeList
         ++ blacktownRichmondEdgeList
@@ -65,7 +66,6 @@ casulaCentralDists = [
     (Homebush, 12740),
     (Flemington, 14320),
     (Lidcombe, 16580),
-{-
     (Berala, 18350),
     (RegentsPark, 19880),
     (Sefton, 21180),
@@ -73,7 +73,6 @@ casulaCentralDists = [
     (Leightonfield, 23660),
     (Villawood, 24480),
     (Carramar, 25900),
--}
     (Cabramatta, 28450),
     (WarwickFarm, 30540),
     (Liverpool, 32090),
@@ -180,7 +179,65 @@ cabraCentralEdgeList :: [Track]
 cabraCentralEdgeList = chainEdgeList cabraCentralDists
 
 -- Page 76
--- TODO: Illawarra
+nowraCentralDists :: [Dist]
+nowraCentralDists = [
+    (Central, 0),
+    (Redfern, 1310),
+    (Erskineville, 2900),
+    (StPeters, 3820),
+    (Sydenham, 5330),
+    (Tempe, 6840),
+    (WolliCreek, 7390),
+    (Arncliffe, 8430),
+    (Banksia, 9600),
+    (Rockdale, 10420),
+    (Kogarah, 11610),
+    (Carlton, 12730),
+    (Allawah, 13680),
+    (Hurstville, 14810),
+    (Penshurst, 16110),
+    (Mortdale, 17040),
+    (Oatley, 18270),
+    (Como, 20360),
+    (Jannali, 22710),
+    (Sutherland, 24720),
+    (Loftus, 26270),
+    (Engadine, 30720),
+    (Heathcote, 33130),
+    (Waterfall, 38740),
+    (Helensburgh, 46390),
+    (Otford, 52650),
+    (StanwellPark, 55950),
+    (CoalCliff, 59240),
+    (Scarborough, 62520),
+    (Wombarra, 64290),
+    (Coledale, 66220),
+    (Austinmer, 68580),
+    (Thirroul, 70230),
+    (Bulli, 72140),
+    (Woonona, 73930),
+    (Bellambi, 75520),
+    (Corrimal, 76990),
+    (Towradgi, 78030),
+    (FairyMeadow, 79380),
+    (NorthWollongong, 81310),
+    (WollongongCity, 82920),
+    (Coniston, 84110),
+    (Unanderra, 88310),
+    (KemblaGrange, 91590),
+    (Dapto, 95070),
+    (AlbionPark, 103320),
+    (OakFlats, 105190),
+    (DunmoreShellharbour, 110660),
+    (Minnamurra, 113400),
+    (Bombo, 117540),
+    (Kiama, 119170),
+    (Gerringong, 128530),
+    (Berry, 140840),
+    (Nowra, 153370)]
+
+nowraCentralEdgeList :: [Track]
+nowraCentralEdgeList = chainEdgeList nowraCentralDists
 
 -- Page 77
 -- TODO: Sydneham - Lidcombe

@@ -4,68 +4,120 @@ module Opal.Distance.Stations (
 ) where
 
 data Station
-    = Artarmon
+    = AlbionPark
+    | Allawah
+    | Arncliffe
+    | Artarmon
     | Ashfield
     | Asquith
     | Auburn
+    | Austinmer
+    | Banksia
+    | Bargo
     | Beecroft
+    | Bellambi
+    | Berala
     | Berowra
+    | Berry
     | Blacktown
+    | Bombo
     | BondiJunction
+    | Bowral
+    | Bulli
+    | Bundanoon
+    | Burradoo
     | Burwood
     | Cabramatta
-    | Camellia
+    | Campbelltown
     | CanleyVale
     | Carlingford
+    | Carlton
+    | Carramar
     | Casula
     | Central
     | Chatswood
     | Cheltenham
+    | ChesterHill
     | CircularQuay
     | Clarendon
     | Clyde
+    | CoalCliff
+    | Coledale
+    | Como
     | ConcordWest
+    | Coniston
+    | Corrimal
     | Cowan
     | Croydon
+    | Dapto
     | Denistone
     | Doonside
+    | DouglasPark
     | Dundas
+    | DunmoreShellharbour
     | EastRichmond
     | Eastwood
     | Edgecliff
     | EmuPlains
+    | Engadine
     | Epping
+    | Erskineville
+    | Exeter
     | Fairfield
+    | FairyMeadow
     | Flemington
+    | Gerringong
+    | Glenfield
     | Gordon
     | Gosford
+    | Goulburn
     | Granville
     | Guildford
     | HarrisPark
     | HawkesburyRiver
+    | Heathcote
+    | Helensburgh
     | Homebush
     | Hornsby
+    | Hurstville
+    | Ingleburn
+    | Jannali
+    | KemblaGrange
+    | Kiama
     | Killara
     | KingsCross
     | Kingswood
+    | Kogarah
     | Koolewong
+    | Leightonfield
+    | Leumeah
     | Lewisham
     | Lidcombe
     | Lindfield
     | Lisarow
     | Liverpool
+    | Loftus
     | Macdonaldtown
+    | MacquarieFields
     | MacquariePark
     | MacquarieUniversity
     | Marayong
     | MartinPlace
     | Meadowbank
+    | Menangle
+    | MenanglePark
     | Merrylands
     | MilsonsPoint
+    | Minnamurra
+    | Minto
+    | Mittagong
+    | Mortdale
+    | MossVale
     | MountColah
     | MountDruitt
     | MountKuringGai
     | Mulgrave
+    | Murulan
     | Museum
     | Narara
     | Newtown
@@ -74,56 +126,86 @@ data Station
     | NorthRyde
     | NorthStrathfield
     | NorthSydney
+    | NorthWollongong
+    | Nowra
+    | OakFlats
+    | Oatley
     | OlympicPark
+    | Otford
     | Ourimbah
     | Parramatta
     | PendleHill
     | PennantHills
     | Penrith
+    | Penrose
+    | Penshurst
     | Petersham
+    | Picton
     | PointClare
     | Pymble
     | QuakersHill
     | Redfern
+    | RegentsPark
     | Rhodes
     | Richmond
     | Riverstone
+    | Rockdale
     | RootyHill
     | Rosehill
     | Roseville
     | Rydalmere
+    | Scarborough
     | Schofields
+    | Sefton
     | SevenHills
     | StJames
     | StLeonards
     | StMarys
+    | StPeters
     | Stanmore
+    | StanwellPark
     | Strathfield
-    | SummerHill -- TBA at https://www.opal.com.au/en/about-opal/what-services-can-i-use-it-on/Train_stations_with_opal/
+    | SummerHill
+    | Sutherland
+    | Sydenham
+    | Tahmoor
+    | Tallong
     | Tascott
     | Telopea
+    | Tempe
+    | Thirroul
     | Thornleigh
     | Toongabbie
     | TownHall
+    | Towradgi
     | Tuggerah
     | Turramurra
+    | Unanderra
+    | Villawood
     | Vineyard
     | Wahroonga
     | Waitara
     | Warrawee
     | WarwickFarm
+    | Waterfall
     | Waverton
     | Wentworthville
     | Werrington
     | WestRyde
     | Westmead
     | Windsor
+    | Wingello
+    | WolliCreek
+    | WollongongCity
     | Wollstonecraft
+    | Wombarra
     | Wondobyne
+    | Woonona
     | WoyWoy
     | Wynyard
     | Wyong
     | Yennora
+    | Yerrinbool
     deriving (Bounded, Eq, Enum, Ord, Read, Show)
 
 stations :: [Station]
